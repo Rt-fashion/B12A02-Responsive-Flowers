@@ -10,10 +10,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styls.css">
-  
+  <style>
+    /* 10px Grid Pattern  */
+    .grid-bg {
+      background-image: 
+        linear-gradient(to right, rgba(255, 0, 0, 0.3) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 0, 0, 0.1) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+  </style>
 </head>
+<body class="bg-[#ebe6e6] roboto-condensed">
 
-<body>
-    
+  <nav class=" m-4 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+
+        <div class="flex-shrink-0 ">
+          <img src="./assets/logo.png" alt="Logo" class="w-[135px] h-[82px] object-contain rounded-2xl border-2  border-green-400 px-2 " />
+        </div>
+
+        <div class="hidden md:flex items-center space-x-8 text-sm">
+          <a href="#" class="font-semibold text-[#464e38c9]">Home</a>
+          <a href="#" class="text-[#8987A1] hover:text-gray-800">Shop</a>
+          <a href="#" class="text-[#8987A1] hover:text-gray-800">About us</a>
+          <img src="./assets/cart.png" alt="Cart" class="w-5 h-5 text-[#000000]" />
+          <span class="text-black mr-2">Cart ($56)</span>
+        </div>
+
+        <div class="md:hidden flex items-center space-x-2">
+          <img src="./assets/cart.png" alt="Cart" class="w-5 h-5 text-[#000000]" />
+          <span class="text-black mr-2">Cart ($56)</span>
+        </div>
+
+      </div>
+    </div>
+  </nav>
 </body>
 </html>
